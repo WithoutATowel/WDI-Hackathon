@@ -31,6 +31,7 @@ class App extends Component {
         return (
             <Router>
                 <div>
+                    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
                     <nav>
                         <Link to="/">Home</Link>
                         <Link to="/blog">Blog</Link>
@@ -38,6 +39,7 @@ class App extends Component {
                         <Link to="/food">Favorite Food</Link>
                         <Link to="/about">About Me</Link>
                     </nav>
+
                     <Route exact path="/" component={Home} />
                     <Route path="/blog" component={ () => <Blog postData={postData} /> } />
                     <Route path="/movie" component={Movie} />
